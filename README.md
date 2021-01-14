@@ -1,9 +1,22 @@
 # PokerStars Calculator
 
-This tool calculates profit/loss of a PokerStars HomeGame.
+This tool calculates profit/loss of a [PokerStars HomeGame](https://www.pokerstars.eu/de/poker/home-games/).
+
+The total number of chips within the game is continually decreasing, since the software/bank takes a cut.
 
 ### Usage
 
-```bash
-./poker.py player1 balance1 player2 balance2 ...
+```
+❯ ./poker.py --help
+usage: poker.py [-h] [-b BUY_IN] [PLAYER BALANCE ...]
+
+Computes profit/loss of a PokerStars HomeGame.
+
+positional arguments:
+  PLAYER BALANCE        player names with chip balances
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -b BUY_IN, --buy-in BUY_IN
+                        buy in (€)
 ```
